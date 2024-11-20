@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* direction: rtl; */
+  background-color: #f8f9fa;
+  color: #333;
+}
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.registration-form {
+  padding: 20px;
+  background: #f4f6f9;
+  border-radius: 8px;
+}
+
+.registration-form h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.registration-form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+}
+
+.booking-summary {
+  padding: 20px;
+  background: #e9ecef;
+  border-radius: 8px;
+}
+
+.booking-summary h2 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.booking-summary .price-details {
+  margin-bottom: 20px;
+}
+
+.booking-summary .price-details p {
+  margin: 10px 0;
+}
+
+.booking-summary button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.booking-summary button:hover {
+  background-color: #218838;
+}
+.language-selector {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.language-selector button {
+  background: transparent;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.language-selector img {
+  width: 30px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
